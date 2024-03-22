@@ -5,20 +5,17 @@ import java.util.Scanner;
 public class S532 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		double a;
-		double b;
 		Scanner sc = new Scanner(System.in);
-		a = sc.nextDouble();
-		b = sc.nextDouble();
-
-		if (a & b>4) {
+		double a = sc.nextDouble();
+		double b = sc.nextDouble();
+		sc.close();
+		
+		if (a >=4.0 & b>= 4.0) {
 			System.out.println("A");
-		} else if (a & b >= 6) {
+		} else if (a >=3.0 & b >= 3.0) {
 			System.out.println("B");
 		} else {
 			System.out.println("C");
 		}
-		sc.close();
-		return ;
 	}
 }
