@@ -12,7 +12,7 @@ public class ActionTest {
 		btn1 = new Button("Button1");
 		btn2 = new Button("Button2");
 		btn3 = new Button("Button3");
-		btn4 = new Button("Button4");
+		btn4 = new Button("Button4");   
 		btn5 = new Button("Button5");
 	}
 	
@@ -24,10 +24,10 @@ public class ActionTest {
 		btn5.addActionListener(new ActionHandler());
 		
 		f.add(btn1, "North");
-		f.add(btn1, "South");
-		f.add(btn1, "West");
-		f.add(btn1, "East");
-		f.add(btn1, "Center");
+		f.add(btn2, "South");
+		f.add(btn3, "West");
+		f.add(btn4, "East");
+		f.add(btn5, "Center");
 		
 		f.setSize(300, 300);
 		f.setVisible(true);	
