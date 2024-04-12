@@ -3,10 +3,13 @@ package Count;
 import java.awt.Button;
 import java.awt.Frame;
 import java.awt.GridLayout;
+import java.awt.Panel;
 import java.awt.TextField;
+import java.awt.event.ActionListener;
 
-public class Coun {
+public class Coun implements ActionListener{
 	private Frame f;
+	private Panel p;
 	private TextField tf1;
 	private Button bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9, bt10, 
 	btp, btm, bte, btg, btn;
@@ -24,6 +27,19 @@ public class Coun {
 		bt8 = new Button("8");
 		bt9 = new Button("9");
 		bt10 = new Button("0");
+		
+		bt10.addActionListener(this);
+		bt1.addActionListener(this);
+		bt2.addActionListener(this);
+		bt3.addActionListener(this);
+		bt4.addActionListener(this);
+		bt5.addActionListener(this);
+		bt6.addActionListener(this);
+		bt7.addActionListener(this);
+		bt8.addActionListener(this);
+		bt9.addActionListener(this);
+		
+		
 		btp= new Button("+");
 		btm= new Button("-");
 		bte= new Button("=");
@@ -35,11 +51,11 @@ public class Coun {
 		f.setLayout(new GridLayout(4, 0));
 		TextField num = new TextField(10);
 		tf1 = new TextField(10);
-		f.add(tf1);
-		f.add(bt7);f.add(bt8);f.add(bt9);f.add(btn);
-		f.add(bt4);f.add(bt5);f.add(bt6);f.add(btg);
-		f.add(bt1);f.add(bt2);f.add(bt3);f.add(btm);
-		f.add(btp);f.add(bt10);f.add(bte);
+		p.add(tf1);
+		p.add(bt7);p.add(bt8);p.add(bt9);p.add(btn);
+		p.add(bt4);p.add(bt5);p.add(bt6);p.add(btg);
+		p.add(bt1);p.add(bt2);p.add(bt3);p.add(btm);
+		p.add(btp);p.add(bt10);p.add(bte);
 		
 		f.setSize(250, 250);
 		f.setVisible(true);
