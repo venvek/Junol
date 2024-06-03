@@ -9,7 +9,7 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
 		int num=n;
-		int g =1;
+		long result = 1l;
 		
 		for(int i = 0; i<n; i++) {
 			for(int j=0; i<n; i++) {
@@ -22,16 +22,10 @@ public class Main {
 			}
 		}
 		}
-		for(g=1; g<n+1; g++) {
-			if(g == 1 ) {
-				break;
-			}
-			else if(g == 2) {
-			System.out.println(g*(g-1));
-			}
-			
+		for(int g=1; g<=n; g++) {
+			result *= g;
 		}
-		System.out.println(n*(n-1));
+		System.out.println(result);
 		}
 	}
 
