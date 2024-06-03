@@ -23,10 +23,15 @@ public class Main {
 		}
 		}
 		for(g=1; g<n+1; g++) {
-			g += g*(g);
-			System.out.println(g);
+			if(g == 1 ) {
+				break;
+			}
+			else if(g == 2) {
+			System.out.println(g*(g-1));
+			}
+			
 		}
-		System.out.println(n*(n-1)*2);
+		System.out.println(n*(n-1));
 		}
 	}
 
