@@ -21,7 +21,7 @@ public class Main2 {
 
 //		System.out.println("Name : " + st1.getName());
 //		System.out.println("School : " + st1.getSchoolName());
-//		System.out.println("Grade : " + st1.getGrade());
+//		System.out.pri ntln("Grade : " + st1.getGrade());
 		st2.print();
 	}
 }
